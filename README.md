@@ -5,7 +5,10 @@
 ## 적용 방법
 1. 아래 해시와 일치하는 **원본 `.3ds`**(복호화된 카트리지 덤프, 1GB)를 준비합니다. CIA나 암호화된 덤프에는 적용할 수 없습니다.
    - PowerShell: `Get-FileHash -Algorithm MD5 -LiteralPath '.\Youkai Sangokushi (Japan) Decrypted.3ds'`
-2. xdeltaUI 같은 도구로 원본에 `YoukaiSangokushi_3DS_KO_v1.0.xdelta` 를 적용합니다.
+2. xdeltaUI 같은 도구로 원본에 xdelta를 적용합니다. 원본 판본에 맞는 것을 고르세요(결과물은 같음).
+   - `YoukaiSangokushi_3DS_KO_v1.0.xdelta`: NoCrypto 표시가 꺼진 복호화 덤프용
+   - `YoukaiSangokushi_3DS_KO_v1.0_NoCrypto.xdelta`: GodMode9 등으로 복호화해 NoCrypto 표시가 켜진 덤프용
+   - 「target window checksum mismatch」 오류가 나면 다른 쪽을 적용하세요. 빈 공간을 잘라낸(트림) 덤프에도 적용됩니다.
    - 명령줄: `xdelta3 -d -s "Youkai Sangokushi (Japan) Decrypted.3ds" YoukaiSangokushi_3DS_KO_v1.0.xdelta "Youkai Sangokushi (Korean).3ds"`
 3. 만들어진 `.3ds`를 Azahar 등 3DS 에뮬레이터에서 실행합니다.
 
@@ -15,6 +18,9 @@
 | 원본 3DS MD5 | `ea1c1c336229a1bb5920d34f2d759b3a` |
 | 원본 3DS SHA-256 | `d6dfb65e270d211554430cf320c9e1aa991b2c092807aac612e729b065e79f6b` |
 | xdelta SHA-256 | `4ca76289a8383fbba0d467c94cf6981347c7fce2f970ad8411d35c01308c6b0a` |
+| (NoCrypto 판본) 원본 3DS MD5 | `53cfafc00a4cde66adc6c1544112b881` |
+| (NoCrypto 판본) 원본 3DS SHA-256 | `bc6020ba1211a3b7c7a11c12c11041a82861ea2ad2aad30fef5b70ca259bc67a` |
+| (NoCrypto 판본) xdelta SHA-256 | `60497d6b9cef72629d535e11a4996510dc316ff0c60109b31c0ba459d10fd01b` |
 | 결과 3DS 크기 | 899,928,064 바이트 |
 | 결과 3DS SHA-256 | `2869e803f2d6ce707f9a3c502b3c10bdfd266e22068e7bc20b3a44f5b1e33911` |
 

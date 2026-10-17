@@ -1,0 +1,11 @@
+{
+ "version": "v1.0",
+ "asset": "YoukaiSangokushi_3DS_KO_v1.0.xdelta",
+ "asset_size": 17106534,
+ "asset_sha256": "4ca76289a8383fbba0d467c94cf6981347c7fce2f970ad8411d35c01308c6b0a",
+ "source_3ds_size": 1073741824,
+ "source_3ds_md5": "ea1c1c336229a1bb5920d34f2d759b3a",
+ "source_3ds_sha256": "d6dfb65e270d211554430cf320c9e1aa991b2c092807aac612e729b065e79f6b",
+ "result_3ds_size": 899928064,
+ "result_3ds_sha256": "2869e803f2d6ce707f9a3c502b3c10bdfd266e22068e7bc20b3a44f5b1e33911"
+}
